@@ -1,47 +1,93 @@
-# TypeScript Next.js example
+-> 프로젝트 방향
+    -> 음악 취향 분석 => 음악 평점 웹사이트
+    -> 개요: 왓챠피디아에 평점처럼 평가할 수 있는 웹 어플리케이션
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+계획
+    -> 레퍼런스 찾기
+    -> 들어갈 페이지, 컴포넌트 확인
+    -> ui 개발
 
-## Deploy your own
+기능
+    -> 검색기능
+        -> spotify api를 가져와서 음악을 검색 할 수 있음 O 
+        -> 가수명, 곡, 제목, 장르로 해당 음악을 검색
+    -> 평점기능
+        -> 해당 노래의 상세페이지에서 평점 0.5~5( 0.5점 단위) 평가
+        -> 코멘트 안주고 평점만 줄 수 있음
+    -> 코멘트기능
+        -> 평점 안주고 코멘트만 줄 수 있음
+    -> 분석기능
+        -> my에서 음악취향 (많이 들었던 가수, 장르)
+        -> 데이터 시각화 필요
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+    -> 음악 id(spotify)가 있는 지 확인
+        -> 제목, 이미지, 가수, 발매일, 장르
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+페이지
+-> main페이지
+-> musicDetail페이지
+-> my페이지
+    -> 평점 & 코멘트 준 리스트 
+    -> 분석
+    -> 즐겨찾기 리스트
 
-## How to use it?
+컴포넌트
+    -> MusicItem
+    -> MusicList
+    -> MusicDetail
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+-> 1.1 - 혁신충 (불만이 많은):
+"음악계에 혁신이 필요해. 더 다양한 음악 필요."
 
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-```
+1.9 - 탐구파 (만족하지 않는):
+"음악은 계속 진화. 실험적인 요소가 더 필요."
 
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
+2.3~2.4 - 절제파 (별점을 짜게 주는):
+"별점 쉽게 주면 안돼. 뛰어난 음악에만 높은 점수."
 
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
+2.5~2.7 - 비판파 (호평을 하지 않는):
+"모든 음악이 호평받을 가치 없어. 객관적 평가 필요."
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+2.9 - 객관파 (냉정하게 평가하는):
+"음악 강점과 약점 냉정하게 평가."
 
-## Notes
+3.1~3.2 - 분석파 (진지하고 비판적으로 보는):
+"음악은 감성뿐 아니라 의도와 메시지 비판적으로 분석."
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+3.3 - 꼼꼼파 (상대적으로 깐깐한):
+"높은 기준 필요. 퀄리티 작품에 높은 점수."
 
-```
-npm install --save-dev typescript
-```
+3.4~3.5 - 현실파 (즐기면서 혹평도 하는):
+"음악은 즐기면서도 비판. 좋은 면과 아쉬운 점 찾기."
 
-To enable TypeScript's features, we install the type declarations for React and Node.
+3.6 - 주관파 (주관이 뚜렷한):
+"내 기준에서 뛰어난 작품에 높은 점수."
 
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
+3.7 - 독립파 (대중의 평가에 휘둘리지 않는):
+"대중보다 음악의 가치에 주목."
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
+3.8 - 균형파 (평범하게 영화를 골고루 보는):
+"다양한 음악을 균형 있게 평가."
 
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+3.9 - 감성파 (진정으로 음악을 즐기는):
+"음악은 즐거움과 깊은 감동이 필요."
 
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+4.0 - 관대파 (별점을 조금 후하게 주는):
+"포근한 관대함 담아 평가. 작은 부족함 크게 신경 않아."
+
+4.4 - 천사급 (다 좋은 착한 사람♥):
+"음악을 통해 찾는 기쁨 큰 소중함."
+
+4.7 - 관용파 (5점 뿌리는 아량의 소유자):
+"뛰어난 작품에 충분한 점수. 관용파의 높은 아량이 필요한 순간."
+
+database
+- userInfo
+- grade
+- comment
+
+필요한 것
+-> 데이터 시각화가 필요한 라이브러리
+-> 로딩 화면 필요
+-> spotify api
+-> 
