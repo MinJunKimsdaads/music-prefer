@@ -90,4 +90,19 @@ database
 -> 데이터 시각화가 필요한 라이브러리
 -> 로딩 화면 필요
 -> spotify api
--> 
+
+
+pages
+main /pages/index.tsx
+music /page/music.tsx
+search /page/search.tsx
+my /page/my.tsx
+
+components
+Layout /components/Layout.tsx
+List1 /components/List1.tsx
+List2 /components/List2.tsx
+ListItem1 /components/ListItem1.tsx
+ListItem2 /components/LlistItem2.tsx
+
+
