@@ -15,9 +15,6 @@ const Layout = ({ children, title = 'Music Prefer' }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
-      {/* <nav>
-        <a href="/api/users">Users API</a>
-      </nav> */}
       Music Prefer
     </header>
     {children}
