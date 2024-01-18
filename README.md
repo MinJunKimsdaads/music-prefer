@@ -106,3 +106,5 @@ ListItem1 /components/ListItem1.tsx
 ListItem2 /components/LlistItem2.tsx
 
 
+메인 페이지만 ssr?
+다른 페이지들은 csr?
