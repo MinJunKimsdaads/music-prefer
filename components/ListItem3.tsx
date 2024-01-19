@@ -7,10 +7,10 @@ import { User } from '../interfaces'
 //   data: User
 // }
 
-const ListItem2 = () => (
+const ListItem3 = () => (
   <Link href="/movie/test">
     <div>test</div>
   </Link>
 )
 
-export default ListItem2
+export default ListItem3

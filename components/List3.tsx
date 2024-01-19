@@ -1,15 +1,16 @@
 import * as React from 'react'
-import ListItem1 from './ListItem1'
+import ListItem3 from './ListItem3'
 import { User } from '../interfaces'
 
 type Props = {
   items: User[]
 }
 
-const List1 = () => (
+const List3 = () => (
   <div>
-    <ListItem1></ListItem1>
+    <ListItem3></ListItem3>
   </div>
 )
 
-export default List1
+
+export default List3

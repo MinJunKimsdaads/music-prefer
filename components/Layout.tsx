@@ -20,9 +20,9 @@ const Layout = ({ children, title = 'Music Prefer' }: Props) => (
     {children}
     <footer>
         <Link href="/">홈</Link>
-        <Link href="/">검색</Link>
-        <Link href="/">평가</Link>
-        <Link href="/">마이</Link>
+        <Link href="/search">검색</Link>
+        <Link href="/my">평가</Link>
+        <Link href="/my">마이</Link>
     </footer>
   </div>
 )

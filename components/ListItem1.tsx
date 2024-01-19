@@ -3,13 +3,13 @@ import Link from 'next/link'
 
 import { User } from '../interfaces'
 
-type Props = {
-  data: User
-}
+// type Props = {
+//   data: User
+// }
 
-const ListItem1 = ({ data }: Props) => (
-  <Link href="/users/[id]" as={`/users/${data.id}`}>
-    {data.id}:{data.name}
+const ListItem1 = () => (
+  <Link href="/music/[id]" as={`/music`}>
+    <div>test</div>
   </Link>
 )
 
