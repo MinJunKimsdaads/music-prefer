@@ -1,3 +1,4 @@
+//영화2 리스트
 import * as React from 'react'
 import ListItem2 from './ListItem2'
 import { User } from '../interfaces'

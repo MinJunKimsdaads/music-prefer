@@ -9,7 +9,7 @@ import { User } from '../interfaces'
 
 const ListItem3 = () => (
   <Link href="/movie/test">
-    <div>test</div>
+    <div>item3</div>
   </Link>
 )
 

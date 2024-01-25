@@ -8,9 +8,11 @@ import { User } from '../interfaces'
 // }
 
 const ListItem2 = () => (
-  <Link href="/movie/test">
-    <div>test</div>
+  <Link href="/music/[id]" as={`/music/5`}>
+    <div>item2</div>
   </Link>
 )
 
 export default ListItem2
+
+//아이디, 이미지, 제목, 출시일
