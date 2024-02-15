@@ -7,7 +7,7 @@ export default function Page() {
             </div>
             <List1></List1>
 
-            <div>
+            {/* <div>
                 리스트2
             </div>
             <List1></List1>
@@ -15,7 +15,7 @@ export default function Page() {
             <div>
                 리스트3
             </div>
-            <List1></List1>
+            <List1></List1> */}
         </div>
     )
 }   

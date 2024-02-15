@@ -8,7 +8,7 @@ import { User } from '../interfaces'
 // }
 
 const ListItem3 = () => (
-  <Link href="/movie/test">
+  <Link href="/[id]" as={`/5`}>
     <div>item3</div>
   </Link>
 )

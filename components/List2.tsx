@@ -1,4 +1,4 @@
-//영화2 리스트
+//검색 시 나오는 리스트
 import * as React from 'react'
 import ListItem2 from './ListItem2'
 import { User } from '../interfaces'
@@ -9,7 +9,9 @@ type Props = {
 
 const List2 = () => (
   <div>
-    <ListItem2></ListItem2>
+    <div>
+      <ListItem2></ListItem2>
+    </div>
   </div>
 )
 

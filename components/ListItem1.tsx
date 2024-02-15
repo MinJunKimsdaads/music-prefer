@@ -1,17 +1,40 @@
 import React from 'react'
 import Link from 'next/link'
-
+import ListDetail from './ListDetail';
 import { User } from '../interfaces'
 
 // type Props = {
 //   data: User
 // }
 
-const ListItem1 = () => (
-  <Link href="/music/[id]" as={`/music/1`}>
-    <div>item1</div>
-  </Link>
-)
+const ListItem1 = () => {
+  const sample = [
+    {
+      id:0,
+      name:'a',
+    },
+    {
+      id:1,
+      name:'b',
+    },
+    {
+      id:2,
+      name:'c',
+    },
+    {
+      id:3,
+      name:'e',
+    },
+  ];
+
+  return(
+    sample.map((item)=>{
+      return(
+        <ListDetail item={{id: item.id, name: item.name}}></ListDetail>
+      )
+    })
+  )
+}
 
 export default ListItem1
 

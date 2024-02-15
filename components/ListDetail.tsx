@@ -1,5 +1,5 @@
-import * as React from 'react'
-
+import React from 'react'
+import Link from 'next/link'
 import { User } from '../interfaces'
 
 type ListDetailProps = {
@@ -7,10 +7,10 @@ type ListDetailProps = {
 }
 
 const ListDetail = ({ item: user }: ListDetailProps) => (
-  <div>
+  <Link href="/[id]" as={`/${user.id}`}>
     <h1>Detail for {user.name}</h1>
     <p>ID: {user.id}</p>
-  </div>
+  </Link>
 )
 
 export default ListDetail
