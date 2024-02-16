@@ -7,12 +7,33 @@ type Props = {
   items: User[]
 }
 
-const List2 = () => (
-  <div>
-    <div>
-      <ListItem2></ListItem2>
-    </div>
-  </div>
-)
+const sample = [
+  {
+    id:0,
+    name:'a',
+  },
+  {
+    id:1,
+    name:'b',
+  },
+  {
+    id:2,
+    name:'c',
+  },
+  {
+    id:3,
+    name:'e',
+  },
+];
+
+const List2 = () => {
+  return(
+    sample.map((item)=>{
+      return(
+        <ListItem2 item={{id: item.id, name: item.name}}></ListItem2>
+      )
+    })
+  )
+}
 
 export default List2

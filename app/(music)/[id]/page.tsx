@@ -1,3 +1,8 @@
+import ListDetail from "../../../components/ListDetail"
 export default function Page({params}:{params:{id:string}} ) {
-    return <h1>{params.id}</h1>
+    return (
+        <div>
+            <ListDetail></ListDetail>
+        </div>
+    )
 }   

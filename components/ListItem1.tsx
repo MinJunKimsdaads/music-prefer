@@ -1,38 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
-import ListDetail from './ListDetail';
 import { User } from '../interfaces'
 
-// type Props = {
-//   data: User
-// }
+type ListDetailProps = {
+  item: User
+}
 
-const ListItem1 = () => {
-  const sample = [
-    {
-      id:0,
-      name:'a',
-    },
-    {
-      id:1,
-      name:'b',
-    },
-    {
-      id:2,
-      name:'c',
-    },
-    {
-      id:3,
-      name:'e',
-    },
-  ];
-
+const ListItem1 = ({ item: user }: ListDetailProps) => {
   return(
-    sample.map((item)=>{
-      return(
-        <ListDetail item={{id: item.id, name: item.name}}></ListDetail>
-      )
-    })
+    <Link href="/[id]" as={`/${user.id}`}>
+      <div>
+        <div>사진</div>
+        <div>
+          <div>제목</div>
+          <div>평점</div>
+        </div>
+      </div>
+    </Link>
   )
 }
 
